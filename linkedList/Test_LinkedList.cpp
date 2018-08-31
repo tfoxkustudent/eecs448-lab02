@@ -497,7 +497,7 @@ bool Test_LinkedList::test18()
 	}
 
 	test = list.toVector();
-	isPassed = true;
+	isPassed = key == test;
 
 	if(!isPassed)
 	{
@@ -510,5 +510,7 @@ bool Test_LinkedList::test18()
 
 	printPassFail(isPassed);
 	return (isPassed); 
+
+
 }
 
